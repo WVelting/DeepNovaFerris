@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleSceneWater.unity
+    path: Assets/Scenes/Snailent.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/VeltingWilliamFolder/MainMenus/MainMenu.unity
+    guid: 30c9e0912d40d6f48a0ba1ae4115292b
+  - enabled: 1
+    path: Assets/VeltingWilliamFolder/MainMenus/Settings.unity
+    guid: 27edf53f48f918047b8cd22717b4442d
+  - enabled: 1
+    path: Assets/VeltingWilliamFolder/MainMenus/Credits.unity
+    guid: d6362e314b04a514d927399e7c742fc7
+  - enabled: 1
+    path: Assets/VeltingWilliamFolder/MainMenus/ChapterSelect.unity
+    guid: fe7aa851383fe7e478a9461076adf3ce
   m_configObjects: {}
