@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class MenuController : MonoBehaviour
 {
+
     void Start()
     {
-        
+
+
     }
 
     void Update()
@@ -44,4 +47,5 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Snailent");
     }
+
 }
