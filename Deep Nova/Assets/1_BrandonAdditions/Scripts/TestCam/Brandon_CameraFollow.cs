@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class CameraFollow : MonoBehaviour
+public class Brandon_CameraFollow : MonoBehaviour
 {
     [Header("Target")]
     public Transform target;
