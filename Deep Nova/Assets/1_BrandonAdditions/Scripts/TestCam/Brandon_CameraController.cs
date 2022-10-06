@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class Brandon_CameraController : MonoBehaviour
 {
     public bool active;
     public GameObject gameCamera;
