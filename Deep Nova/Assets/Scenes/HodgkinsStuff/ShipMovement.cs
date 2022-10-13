@@ -70,6 +70,22 @@ public class ShipMovement : MonoBehaviour
 
     }
 
+    public static Vector3 Lerp(Vector3 a, Vector3 b, float p)
+    {
+        Vector3 result = new Vector3();
+
+        result.x = Lerp(a.x, b.x, p);
+        result.y = Lerp(a.y, b.y, p);
+        result.z = Lerp(a.z, b.z, p);
+
+        return result;
+    }
+
+    public static float Lerp(float a, float b, float p)
+    {
+        return (b - a) * p + a;
+    }
+
     void LocalMove(float x, float y, float speed)
     {
         transform.localPosition += new Vector3(x, y, 0) * speed * Time.deltaTime;
@@ -79,9 +95,9 @@ public class ShipMovement : MonoBehaviour
     void ClampPosition()
     {
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-        pos.x = Mathf.Clamp01(pos.x);
-        pos.y = Mathf.Clamp01(pos.y);
-        transform.position = Camera.main.ViewportToWorldPoint(pos);
+        pos.x = Mathf.Clamp(pos.x, 0.15f, 0.85f);
+        pos.y = Mathf.Clamp(pos.y, 0.2f, 0.8f);
+        transform.position = Lerp(transform.position, Camera.main.ViewportToWorldPoint(pos), 0.01f);
     }
 
     void RotationLook(float h, float v, float speed)
