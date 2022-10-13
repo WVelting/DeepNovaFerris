@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+
+
+
 public class MenuController : MonoBehaviour
 {
 
@@ -11,6 +14,8 @@ public class MenuController : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject chapterPanel;
     public GameObject creditsPanel;
+    
+    
 
     void Start()
     {
