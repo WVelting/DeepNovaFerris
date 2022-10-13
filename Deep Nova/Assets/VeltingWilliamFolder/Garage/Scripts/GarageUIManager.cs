@@ -56,5 +56,10 @@ public class GarageUIManager : MonoBehaviour
         techPanel.SetActive(false);
     }
 
+    public void OnTechTreeButton()
+    {
+
+    }
+
 
 }
