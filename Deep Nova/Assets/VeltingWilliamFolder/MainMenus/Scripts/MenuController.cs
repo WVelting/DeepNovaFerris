@@ -7,8 +7,17 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
 
+    public GameObject mainPanel;
+    public GameObject settingsPanel;
+    public GameObject chapterPanel;
+    public GameObject creditsPanel;
+
     void Start()
     {
+        mainPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+        chapterPanel.SetActive(false);
+        creditsPanel.SetActive(false);
 
 
     }
@@ -20,22 +29,35 @@ public class MenuController : MonoBehaviour
 
     public void OnClickChapterSelect()
     {
-        SceneManager.LoadScene("ChapterSelect");
+        mainPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        chapterPanel.SetActive(true);
+        creditsPanel.SetActive(false);
     }
 
     public void OnClickSettings()
     {
-        SceneManager.LoadScene("Settings");
+        mainPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+        chapterPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+
     }
 
     public void OnClickCredits()
     {
-        SceneManager.LoadScene("Credits");
+        mainPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        chapterPanel.SetActive(false);
+        creditsPanel.SetActive(true);
     }
 
     public void OnClickBackToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        mainPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+        chapterPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
 
     public void OnClickExit()
