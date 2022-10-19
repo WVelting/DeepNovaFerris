@@ -7,10 +7,12 @@ public class ButtonController : MonoBehaviour
 {
     public string statName;
     public string unlocks;
+    public string unlocks2;
     public int statVal;
     public int unlockInt;
     public string requirementName;
     public int requirement;
+    public int numOfReqs;
     public Button button;
 
     void Start()
@@ -23,13 +25,13 @@ public class ButtonController : MonoBehaviour
         if(PlayerPrefs.HasKey(requirementName)) requirement = PlayerPrefs.GetInt(requirementName);
         
 
-        if(requirement < 1) 
+        if(requirement < numOfReqs) 
         {
             button.image.color = new Vector4(0.4f,0.4f,0.4f,1);
             button.enabled = false;
             
         }
-        else if(requirement == 1)
+        else if(requirement == numOfReqs)
         {
             button.image.color = new Vector4(1,1,1,1);
             button.enabled = true;
@@ -43,24 +45,37 @@ public class ButtonController : MonoBehaviour
 
     public void OnValButtonPress()
     {
-        print("pressed");
-        string stat = statName;
-        int val = PlayerPrefs.GetInt(stat) + statVal;
-       PlayerPrefs.SetInt(stat, val); 
-       print(PlayerPrefs.GetInt(stat));
-       requirement++;
-       PlayerPrefs.SetInt(requirementName, requirement);
+        if(statName!="")
+        {
+            print("pressed");
+            string stat = statName;
+            int val = PlayerPrefs.GetInt(stat) + statVal;
+            PlayerPrefs.SetInt(stat, val); 
+            print(PlayerPrefs.GetInt(stat));
+        }
+            requirement++;
+            PlayerPrefs.SetInt(requirementName, requirement);
     }
 
-    public void OnBoolButtonPress()
+    public void OnUnlockButtonPress()
     {
         print("pressed");
-        PlayerPrefs.SetInt(unlocks, unlockInt);
+        int currentUnlock = PlayerPrefs.GetInt(unlocks);
+        int unlockAmount = currentUnlock + unlockInt;
+        PlayerPrefs.SetInt(unlocks, unlockAmount);
         print(unlocks + " is unlocked");
+        if(unlocks2!="") 
+        {
+            PlayerPrefs.SetInt(unlocks2, unlockInt);
+            print(unlocks2 + " is unlocked");
+        }
+        else return;
     }
 
-    void OnDisabled()
+
+    public void OnShipUnlock()
     {
-        button.image.color = new Vector4(116,166,166,255);
+        PlayerPrefs.SetString("current-ship", statName);
+        print(PlayerPrefs.GetString("current-ship"));
     }
 }

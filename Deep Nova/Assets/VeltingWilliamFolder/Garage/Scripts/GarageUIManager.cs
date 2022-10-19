@@ -9,15 +9,17 @@ public class GarageUIManager : MonoBehaviour
 {
 
     public GameObject mainPanel;
-    public GameObject techPanel;
+    public GameObject ship1TechPanel;
     public GameObject journalPanel;
     public GameObject shipPanel;
+    public GameObject quetzalTechPanel;
 
     void Start()
     {
         mainPanel.SetActive(true);
         shipPanel.SetActive(true);
-        techPanel.SetActive(false);
+        ship1TechPanel.SetActive(false);
+        quetzalTechPanel.SetActive(false);
         journalPanel.SetActive(false);
     }
 
@@ -47,17 +49,33 @@ public class GarageUIManager : MonoBehaviour
     public void OnTechPanel()
     {
         mainPanel.SetActive(false);
-        techPanel.SetActive(true);
+        UnlockedShip();
     }
 
     public void OnMainPanel()
     {
         mainPanel.SetActive(true);
-        techPanel.SetActive(false);
+        ship1TechPanel.SetActive(false);
+        quetzalTechPanel.SetActive(false);
     }
 
-    public void OnTechTreeButton()
+    public void UnlockedShip()
     {
+        print("switching now");
+        switch(PlayerPrefs.GetString("current-ship"))
+        {
+            case "quetzal-mk-5":
+                print("switching to quetzal");
+                ship1TechPanel.SetActive(false);
+                quetzalTechPanel.SetActive(true);
+                break;
+            case "":
+                ship1TechPanel.SetActive(true);
+                quetzalTechPanel.SetActive(false);
+                break;
+
+        }
+
 
     }
 
