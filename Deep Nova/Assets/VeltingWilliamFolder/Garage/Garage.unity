@@ -210,19 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 51411156}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 51411156}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -244,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-health
-  unlocks: entropic-gg
+  statName: Shield Health
+  unlocks: Entropic Gravity Generator
   unlocks2: 
   statVal: 100
   unlockInt: 1
@@ -253,6 +241,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 51411155}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &51411157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,19 +371,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 64640620}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 64640620}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -412,8 +393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-speed
-  unlocks: quetzal
+  statName: Ship Speed
+  unlocks: Quetzal Mk V
   unlocks2: 
   statVal: 250
   unlockInt: 1
@@ -421,6 +402,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 64640619}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &64640621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,19 +669,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 119487004}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 119487004}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -717,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-health
+  statName: Shield Health
   unlocks: ship-health2unlock
   unlocks2: 
   statVal: 50
@@ -726,6 +700,11 @@ MonoBehaviour:
   requirement: 1
   numOfReqs: 1
   button: {fileID: 119487003}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &119487005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,19 +1083,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 161582076}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 161582076}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1138,8 +1105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-health
-  unlocks: quetzal
+  statName: Shield Health
+  unlocks: Quetzal Mk V
   unlocks2: 
   statVal: 250
   unlockInt: 1
@@ -1147,6 +1114,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 161582075}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &161582077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,19 +1244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 207250698}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 207250698}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1311,10 +1271,15 @@ MonoBehaviour:
   unlocks2: ehdg
   statVal: 0
   unlockInt: 1
-  requirementName: entropic-gg
+  requirementName: Entropic Gravity Generator
   requirement: 0
   numOfReqs: 2
   button: {fileID: 207250697}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &207250699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,6 +1723,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299642529}
   m_CullTransparentMesh: 1
+--- !u!1 &317926735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 317926736}
+  - component: {fileID: 317926738}
+  - component: {fileID: 317926737}
+  m_Layer: 5
+  m_Name: DialoguePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &317926736
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317926735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1297886779}
+  - {fileID: 710690177}
+  - {fileID: 1172569036}
+  - {fileID: 1017562967}
+  - {fileID: 867709176}
+  m_Father: {fileID: 1507084913}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.8, y: 0.2}
+  m_AnchorMax: {x: 1, y: 0.9}
+  m_AnchoredPosition: {x: -12.5, y: 0}
+  m_SizeDelta: {x: -25, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &317926737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317926735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &317926738
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317926735}
+  m_CullTransparentMesh: 1
 --- !u!1 &359357013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,19 +1891,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359357016}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 359357016}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1879,8 +1913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-itemradius
-  unlocks: entropic-gg
+  statName: Item Pickup Radius
+  unlocks: Entropic Gravity Generator
   unlocks2: 
   statVal: 100
   unlockInt: 1
@@ -1888,6 +1922,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 359357015}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &359357017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2418,19 +2457,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 532048614}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 532048614}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2490,7 +2517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-speed
+  statName: Ship Speed
   unlocks: ship-speed2unlock
   unlocks2: 
   statVal: 50
@@ -2499,6 +2526,11 @@ MonoBehaviour:
   requirement: 1
   numOfReqs: 1
   button: {fileID: 532048611}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!1 &543783049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,19 +2752,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 550759644}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 550759644}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2754,7 +2774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-firerate
+  statName: Fire Rate
   unlocks: ship-firerate2unlock
   unlocks2: 
   statVal: 50
@@ -2763,6 +2783,11 @@ MonoBehaviour:
   requirement: 1
   numOfReqs: 1
   button: {fileID: 550759643}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &550759645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2800,6 +2825,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550759641}
+  m_CullTransparentMesh: 1
+--- !u!1 &597589081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597589082}
+  - component: {fileID: 597589084}
+  - component: {fileID: 597589083}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &597589082
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597589081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1297886779}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &597589083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597589081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Upgrade
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &597589084
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597589081}
   m_CullTransparentMesh: 1
 --- !u!1 &618416776
 GameObject:
@@ -3292,19 +3452,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 692162507}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 692162507}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3326,7 +3474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-damage
+  statName: Damage
   unlocks: ship-damage2unlock
   unlocks2: 
   statVal: 50
@@ -3335,6 +3483,11 @@ MonoBehaviour:
   requirement: 1
   numOfReqs: 1
   button: {fileID: 692162506}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &692162508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3594,19 +3747,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 704877715}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 704877715}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3628,8 +3769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-speed
-  unlocks: plasmic
+  statName: Ship Speed
+  unlocks: Plasmic Engineering
   unlocks2: 
   statVal: 100
   unlockInt: 1
@@ -3637,6 +3778,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 704877714}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &704877716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3674,6 +3820,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704877712}
+  m_CullTransparentMesh: 1
+--- !u!1 &710690176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710690177}
+  - component: {fileID: 710690179}
+  - component: {fileID: 710690178}
+  m_Layer: 5
+  m_Name: StatName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &710690177
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710690176}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 317926736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.95}
+  m_AnchorMax: {x: 0.5, y: 0.95}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &710690178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710690176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Stat Name
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &710690179
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710690176}
   m_CullTransparentMesh: 1
 --- !u!1 &710738111
 GameObject:
@@ -4094,10 +4375,15 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 1
-  requirementName: quetzal
+  requirementName: Quetzal Mk V
   requirement: 0
   numOfReqs: 5
   button: {fileID: 747445792}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &747445794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4926,6 +5212,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865448291}
   m_CullTransparentMesh: 1
+--- !u!1 &867709175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867709176}
+  - component: {fileID: 867709178}
+  - component: {fileID: 867709177}
+  m_Layer: 5
+  m_Name: UnlockDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &867709176
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867709175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 317926736}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &867709177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867709175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: This is unlocking dialogue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &867709178
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867709175}
+  m_CullTransparentMesh: 1
 --- !u!1 &873998560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,19 +5849,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 918160945}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 918160945}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5462,8 +5871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-damage
-  unlocks: plasmic
+  statName: Damage
+  unlocks: Plasmic Engineering
   unlocks2: 
   statVal: 100
   unlockInt: 1
@@ -5471,6 +5880,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 918160944}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &918160946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5723,6 +6137,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991024684}
   m_CullTransparentMesh: 1
+--- !u!1 &1017562966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017562967}
+  - component: {fileID: 1017562969}
+  - component: {fileID: 1017562968}
+  m_Layer: 5
+  m_Name: UpgradedValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1017562967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017562966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 317926736}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.55}
+  m_AnchorMax: {x: 0.5, y: 0.55}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1017562968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017562966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: upgradevalue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1017562969
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017562966}
+  m_CullTransparentMesh: 1
 --- !u!1 &1026324253
 GameObject:
   m_ObjectHideFlags: 0
@@ -5945,19 +6494,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1056832070}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1056832070}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5979,7 +6516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-health
+  statName: Shield Health
   unlocks: ehdg2
   unlocks2: 
   statVal: 125
@@ -5988,6 +6525,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1056832069}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1056832071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6113,19 +6655,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1097573346}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1097573346}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6152,10 +6682,15 @@ MonoBehaviour:
   unlocks2: plasma-throwers
   statVal: 0
   unlockInt: 1
-  requirementName: plasmic
+  requirementName: Plasmic Engineering
   requirement: 0
   numOfReqs: 2
   button: {fileID: 1097573345}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1097573347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6415,19 +6950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1135035463}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1135035463}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6449,7 +6972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-speed
+  statName: Ship Speed
   unlocks: lcpb2
   unlocks2: 
   statVal: 125
@@ -6458,6 +6981,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1135035462}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1135035464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6912,6 +7440,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163519407}
   m_CullTransparentMesh: 1
+--- !u!1 &1172569035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172569036}
+  - component: {fileID: 1172569038}
+  - component: {fileID: 1172569037}
+  m_Layer: 5
+  m_Name: StatValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1172569036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172569035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 317926736}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.75}
+  m_AnchorMax: {x: 0.5, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1172569037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172569035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: StatValue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1172569038
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172569035}
+  m_CullTransparentMesh: 1
 --- !u!1 &1191365473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6999,19 +7662,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1191365476}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1191365476}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7033,7 +7684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-damage
+  statName: Damage
   unlocks: plasma-throwers2
   unlocks2: 
   statVal: 125
@@ -7042,6 +7693,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1191365475}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1191365477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7229,19 +7885,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1228461960}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1228461960}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7263,7 +7907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-firerate
+  statName: Fire Rate
   unlocks: thermal-venting2
   unlocks2: 
   statVal: 125
@@ -7272,6 +7916,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1228461959}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1228461961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7309,6 +7958,191 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228461957}
+  m_CullTransparentMesh: 1
+--- !u!1 &1297886778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297886779}
+  - component: {fileID: 1297886783}
+  - component: {fileID: 1297886782}
+  - component: {fileID: 1297886781}
+  - component: {fileID: 1297886780}
+  m_Layer: 5
+  m_Name: Test Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1297886779
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297886778}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 597589082}
+  m_Father: {fileID: 317926736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.05}
+  m_AnchorMax: {x: 0.5, y: 0.05}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1297886780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297886778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statName: 
+  unlocks: 
+  unlocks2: 
+  statVal: 0
+  unlockInt: 0
+  requirementName: resetter
+  requirement: 0
+  numOfReqs: 0
+  button: {fileID: 1297886781}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1172569037}
+  unlockText: {fileID: 1172569037}
+  dialoguePanel: {fileID: 317926735}
+--- !u!114 &1297886781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297886778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1297886782}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1297886780}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: OnValButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1297886780}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: OnUnlockButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1199709107}
+        m_TargetAssemblyTypeName: PrefReset, Assembly-CSharp
+        m_MethodName: CacheReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1297886782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297886778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1297886783
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297886778}
   m_CullTransparentMesh: 1
 --- !u!1 &1397130382
 GameObject:
@@ -7397,19 +8231,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1397130385}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1397130385}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7431,8 +8253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-firerate
-  unlocks: quetzal
+  statName: Fire Rate
+  unlocks: Quetzal Mk V
   unlocks2: 
   statVal: 250
   unlockInt: 1
@@ -7440,6 +8262,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1397130384}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1397130386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7910,6 +8737,7 @@ RectTransform:
   - {fileID: 1912865093}
   - {fileID: 1760143801}
   - {fileID: 1545076732}
+  - {fileID: 317926736}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8005,19 +8833,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1531108907}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1531108907}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8039,8 +8855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-damage
-  unlocks: quetzal
+  statName: Damage
+  unlocks: Quetzal Mk V
   unlocks2: 
   statVal: 250
   unlockInt: 1
@@ -8048,6 +8864,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1531108906}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1531108908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8103,7 +8924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1545076730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9512,19 +10333,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1823354503}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1823354503}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9551,10 +10360,15 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 1
-  requirementName: gatling-laser
+  requirementName: Gatling Laser
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1823354502}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1823354504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9815,19 +10629,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1860474375}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1860474375}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9849,8 +10651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-itemradius
-  unlocks: quetzal
+  statName: Item Pickup Radius
+  unlocks: Quetzal Mk V
   unlocks2: 
   statVal: 250
   unlockInt: 1
@@ -9858,6 +10660,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1860474374}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1860474376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10727,19 +11534,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1942488797}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1942488797}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10761,8 +11556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-firerate
-  unlocks: gatling-laser
+  statName: Fire Rate
+  unlocks: Gatling Laser
   unlocks2: 
   statVal: 100
   unlockInt: 1
@@ -10770,6 +11565,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1942488796}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1942488798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10895,19 +11695,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1977887079}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1977887079}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10929,7 +11717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-itemradius
+  statName: Item Pickup Radius
   unlocks: mass-fluct2
   unlocks2: 
   statVal: 125
@@ -10938,6 +11726,11 @@ MonoBehaviour:
   requirement: 0
   numOfReqs: 1
   button: {fileID: 1977887078}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1977887080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11198,19 +11991,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2050023374}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnValButtonPress
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2050023374}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: OnUnlockButtonPress
+        m_MethodName: OnUpgradeButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11232,7 +12013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a4a9215f69e2246a51661fa8299bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statName: ship-itemradius
+  statName: Item Pickup Radius
   unlocks: ship-itemradius2unlock
   unlocks2: 
   statVal: 50
@@ -11241,6 +12022,11 @@ MonoBehaviour:
   requirement: 1
   numOfReqs: 1
   button: {fileID: 2050023373}
+  statText: {fileID: 710690178}
+  valText: {fileID: 1172569037}
+  upgradeText: {fileID: 1017562968}
+  unlockText: {fileID: 867709177}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &2050023375
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,20 +18,21 @@ public class PrefReset : MonoBehaviour
 
     public void OnReset()
     {
-        PlayerPrefs.SetInt("ship-speed", 0);
-        PlayerPrefs.SetInt("ship-damage", 0);
-        PlayerPrefs.SetInt("ship-firerate", 0);
-        PlayerPrefs.SetInt("ship-itemradius", 0);
-        PlayerPrefs.SetInt("ship-health", 0);
+        //Main Prefs
+        PlayerPrefs.SetInt("Ship Speed", 0);
+        PlayerPrefs.SetInt("Damage", 0);
+        PlayerPrefs.SetInt("Fire Rate", 0);
+        PlayerPrefs.SetInt("Item Pickup Radius", 0);
+        PlayerPrefs.SetInt("Shield Health", 0);
         PlayerPrefs.SetInt("ship-speed2unlock", 0);
         PlayerPrefs.SetInt("ship-damage2unlock", 0);
         PlayerPrefs.SetInt("ship-firerate2unlock", 0);
         PlayerPrefs.SetInt("ship-itemradius2unlock", 0);
         PlayerPrefs.SetInt("ship-health2unlock", 0);
-        PlayerPrefs.SetInt("plasmic", 0);
+        PlayerPrefs.SetInt("Plasmic Engineering", 0);
         PlayerPrefs.SetInt("lcpb", 0);
-        PlayerPrefs.SetInt("gatling-laser", 0);
-        PlayerPrefs.SetInt("entropic-gg", 0);
+        PlayerPrefs.SetInt("Gatling Laser", 0);
+        PlayerPrefs.SetInt("Entropic Gravity Generator", 0);
         PlayerPrefs.SetInt("ehdg", 0);
         PlayerPrefs.SetInt("plasma-throwers", 0);
         PlayerPrefs.SetInt("thermal-venting", 0);
@@ -41,7 +42,7 @@ public class PrefReset : MonoBehaviour
         PlayerPrefs.SetInt("thermal-venting2", 0);
         PlayerPrefs.SetInt("mass-fluct2", 0);
         PlayerPrefs.SetInt("ehdg2", 0);
-        PlayerPrefs.SetInt("quetzal", 0);
+        PlayerPrefs.SetInt("Quetzal Mk V", 0);
         PlayerPrefs.SetInt("first-ship-speed", 1);
         PlayerPrefs.SetInt("first-ship-damage", 1);
         PlayerPrefs.SetInt("first-ship-firerate", 1);
@@ -52,5 +53,20 @@ public class PrefReset : MonoBehaviour
         print("ship speed " + PlayerPrefs.GetInt("ship-speed"));
         print("ship 2 speed unlocked " + PlayerPrefs.GetInt("ship-speed2unlock"));
         print("plasmic unlocked " + PlayerPrefs.GetInt("plasmic"));
+
+        //cached Prefs
+    }
+
+    public void CacheReset()
+    {
+        PlayerPrefs.SetInt("resetter", 0);
+        PlayerPrefs.SetString("temp-stat-name", "");
+        PlayerPrefs.SetInt("temp-stat-val", 0);
+        PlayerPrefs.SetString("temp-unlocks", "");
+        PlayerPrefs.SetString("temp-unlocks2", "");
+        PlayerPrefs.SetInt("temp-unlock-val", 0);
+        PlayerPrefs.SetString("temp-requirement", "");
+        PlayerPrefs.SetInt("temp-requirement-amount", 0);
+
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,9 +16,15 @@ public class ButtonController : MonoBehaviour
     public int numOfReqs;
     public Button button;
 
+    public TextMeshProUGUI statText;
+    public TextMeshProUGUI valText;
+    public TextMeshProUGUI upgradeText;
+    public TextMeshProUGUI unlockText;
+    public GameObject dialoguePanel;
+
     void Start()
     {
-        
+        dialoguePanel.SetActive(false);
     }
 
     void Update()
@@ -43,33 +50,71 @@ public class ButtonController : MonoBehaviour
         }
     }
 
+    public void OnUpgradeButtonPress()
+    {
+        PlayerPrefs.SetString("temp-stat-name", statName);
+        PlayerPrefs.SetInt("temp-stat-val", statVal);
+        PlayerPrefs.SetString("temp-unlocks", unlocks);
+        PlayerPrefs.SetString("temp-unlocks2", unlocks2);
+        PlayerPrefs.SetInt("temp-unlock-val", unlockInt);
+        PlayerPrefs.SetString("temp-requirement", requirementName);
+        PlayerPrefs.SetInt("temp-requirement-amount", requirement);
+
+        if(PlayerPrefs.GetString("temp-stat-name") != "")
+        {
+            statText.SetText(statName);
+            valText.SetText("Current Value<br>" + PlayerPrefs.GetInt(statName).ToString());
+            upgradeText.SetText("Upgraded Value<br>" + (PlayerPrefs.GetInt(statName)+statVal).ToString());
+            unlockText.SetText("");
+            dialoguePanel.SetActive(true);
+
+        }
+
+        else
+        {
+            statText.SetText("");
+            valText.SetText("");
+            upgradeText.SetText("");
+            unlockText.SetText(PlayerPrefs.GetString("temp-requirement") + " will be unlocked by purchasing.");
+            dialoguePanel.SetActive(true);
+        }
+
+    }
+
     public void OnValButtonPress()
     {
-        if(statName!="")
+        if(PlayerPrefs.GetString("temp-stat-name")!="")
         {
             print("pressed");
-            string stat = statName;
-            int val = PlayerPrefs.GetInt(stat) + statVal;
+            string stat = PlayerPrefs.GetString("temp-stat-name");
+            int val = PlayerPrefs.GetInt(stat) + PlayerPrefs.GetInt("temp-stat-val");
             PlayerPrefs.SetInt(stat, val); 
-            print(PlayerPrefs.GetInt(stat));
+            print("stat is " + PlayerPrefs.GetInt(stat));
         }
-            requirement++;
-            PlayerPrefs.SetInt(requirementName, requirement);
+        
+        int newRequirement = PlayerPrefs.GetInt(PlayerPrefs.GetString("temp-requirement"));
+        
+        newRequirement ++;
+        
+        PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-requirement"), newRequirement);
+        dialoguePanel.SetActive(false);
+
     }
 
     public void OnUnlockButtonPress()
     {
         print("pressed");
-        int currentUnlock = PlayerPrefs.GetInt(unlocks);
-        int unlockAmount = currentUnlock + unlockInt;
-        PlayerPrefs.SetInt(unlocks, unlockAmount);
-        print(unlocks + " is unlocked");
-        if(unlocks2!="") 
+        int currentUnlock = PlayerPrefs.GetInt(PlayerPrefs.GetString("temp-unlocks"));
+        int unlockAmount = currentUnlock + PlayerPrefs.GetInt("temp-unlock-val");
+        PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-unlocks"), unlockAmount);
+        print(PlayerPrefs.GetString("temp-unlocks") + " is unlocked");
+        if(PlayerPrefs.GetString("temp-unlocks2")!="") 
         {
-            PlayerPrefs.SetInt(unlocks2, unlockInt);
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-unlocks2"), unlockAmount);
             print(unlocks2 + " is unlocked");
         }
         else return;
+
     }
 
 
