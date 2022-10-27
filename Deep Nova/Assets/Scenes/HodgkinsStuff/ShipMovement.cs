@@ -4,10 +4,16 @@ using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
 using UnityEngine.Rendering.PostProcessing;
+using System;
 
 public class ShipMovement : MonoBehaviour
 {
     private Transform playerModel;
+
+    private float fixedTime;
+    public float dmfTime;
+    public float dmfLength;
+
 
     [Header("Settings")]
     public bool joystick = true;
@@ -38,6 +44,7 @@ public class ShipMovement : MonoBehaviour
     {
         playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
+        fixedTime = Time.fixedDeltaTime;
     }
 
     void Update()
@@ -49,10 +56,12 @@ public class ShipMovement : MonoBehaviour
         RotationLook(h, v, lookSpeed);
         HorizontalLean(playerModel, h, 80, .1f);
 
-        if (Input.GetButtonDown("Fire2"))
+        DarkMatterFuel();
+
+        if (Input.GetKeyDown(KeyCode.Space))
             Boost(true);
 
-        if (Input.GetButtonUp("Fire2"))
+        if (Input.GetKeyUp(KeyCode.Space))
             Boost(false);
 
         if (Input.GetButtonDown("Fire3"))
@@ -67,7 +76,24 @@ public class ShipMovement : MonoBehaviour
             QuickSpin(dir);
         }
 
+    }
 
+    private void DarkMatterFuel()
+    {
+        float slowDown = 0.35f; // slowdown value
+
+        Time.timeScale = slowDown; // value of timescale is now the slowdown value
+        Time.fixedDeltaTime = fixedTime * slowDown; // slows down everything
+        dmfTime -= Time.deltaTime; // counts down the timer/length of DMF
+
+        if (dmfTime <= 0)
+        {
+            //return timer to 0 to prevent any overflow
+            dmfTime = 0;
+            //return time to normal speed
+            Time.timeScale = 1;
+            Time.fixedDeltaTime = fixedTime * 1;
+        }
     }
 
     public static Vector3 Lerp(Vector3 a, Vector3 b, float p)
@@ -95,9 +121,9 @@ public class ShipMovement : MonoBehaviour
     void ClampPosition()
     {
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-        pos.x = Mathf.Clamp(pos.x, 0.15f, 0.85f);
-        pos.y = Mathf.Clamp(pos.y, 0.2f, 0.8f);
-        transform.position = Lerp(transform.position, Camera.main.ViewportToWorldPoint(pos), 0.01f);
+        pos.x = Mathf.Clamp(pos.x, 0.25f, 0.75f);
+        pos.y = Mathf.Clamp(pos.y, 0.35f, 0.7f);
+        transform.position = Lerp(transform.position, Camera.main.ViewportToWorldPoint(pos), 0.03f);
     }
 
     void RotationLook(float h, float v, float speed)
@@ -112,6 +138,18 @@ public class ShipMovement : MonoBehaviour
         Vector3 targetEulerAngels = target.localEulerAngles;
         target.localEulerAngles = new Vector3(targetEulerAngels.x, targetEulerAngels.y, Mathf.LerpAngle(targetEulerAngels.z, -axis * leanLimit, lerpTime));
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "DarkMatterFuel")
+        {
+            Destroy(other.gameObject);
+            dmfTime = dmfLength;
+
+            
+        }
+    }
+
 
     private void OnDrawGizmos()
     {
