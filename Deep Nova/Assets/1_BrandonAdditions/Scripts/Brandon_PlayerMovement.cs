@@ -17,7 +17,14 @@ public class Brandon_PlayerMovement : MonoBehaviour
     [Header("Parameters")]
     public float xySpeed = 18;
     public float lookSpeed = 340;
-    public float forwardSpeed = 6;
+    public float forwardSpeed = 100;
+
+    // Ability
+    public float boostTimer; // Timer for boosting
+    public float boostCD = 10; // Boost Cool Down 
+    private bool boosting = false;
+    private bool canBoost = false;
+
 
     [Space]
 
@@ -49,11 +56,35 @@ public class Brandon_PlayerMovement : MonoBehaviour
         RotationLook(h,v, lookSpeed);
         HorizontalLean(playerModel, h, 80, .1f);
 
-        if (Input.GetButtonDown("Action"))
-            Boost(true);
+        //Boost Cool Down
+        boostCD -= Time.deltaTime;
+        if (boostCD <= 0)
+        {
+            canBoost = true;
+        }
+        
+        // Press button to boost
+        if (canBoost && Input.GetButtonDown("Action"))
+        { 
+            boostTimer += Time.deltaTime;
+            boosting = true;
+            StartBoost();
+        }
+        // hold button to boost
+        if (Input.GetButton("Action") && boostCD <= 0)
+        {
+            boostTimer += Time.deltaTime;
+            // used if player is holding down boost button to boost
+            if (boostTimer >= 5)
+            {
+                boosting = false;
+                Boost(false);
+            }
+        }
 
+        // This can be used if we want the player to be able to hold down for boost
         if (Input.GetButtonUp("Action"))
-            Boost(false);
+             Boost(false);
 
         if (Input.GetButtonDown("Fire3"))
             Break(true);
@@ -67,7 +98,24 @@ public class Brandon_PlayerMovement : MonoBehaviour
             QuickSpin(dir);
         }
 
+        
 
+    }
+
+    public static Vector3 Lerp(Vector3 a, Vector3 b, float p)
+    {
+        Vector3 result = new Vector3();
+
+        result.x = Lerp(a.x, b.x, p);
+        result.y = Lerp(a.y, b.y, p);
+        result.z = Lerp(a.z, b.z, p);
+
+        return result;
+    }
+
+    public static float Lerp(float a, float b, float p)
+    {
+        return (b - a) * p + a;
     }
 
     void LocalMove(float x, float y, float speed)
@@ -81,7 +129,7 @@ public class Brandon_PlayerMovement : MonoBehaviour
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
         pos.y = Mathf.Clamp01(pos.y);
-        transform.position = Camera.main.ViewportToWorldPoint(pos);
+        transform.position = Lerp(transform.position, Camera.main.ViewportToWorldPoint(pos), .05f);
     }
 
     void RotationLook(float h, float v, float speed)
@@ -139,46 +187,75 @@ public class Brandon_PlayerMovement : MonoBehaviour
         Camera.main.GetComponent<PostProcessVolume>().profile.GetSetting<ChromaticAberration>().intensity.value = x;
     }
 
+    // Help keep track of boost this will start the Boost method and set a timer to stop the boost
+    void StartBoost()
+    {
+        Boost(true);
 
+        Invoke("EndBoost", 5);
+    }
+
+    // This will call after the timer is up and stop the boost and reset timer
+    void EndBoost()
+    {
+        Boost(false);
+        boostTimer = 0;
+        boostCD = 10;
+        boosting = false;
+        canBoost = false;
+    }
     void Boost(bool state)
     {
-
-        if (state)
+        if (boosting && boostCD <= 0)
         {
-            cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
-            trail.Play();
-            circle.Play();
+
+            if (state)
+            {
+                cameraParent.GetComponentInChildren<CinemachineImpulseSource>().GenerateImpulse();
+                trail.Play();
+                circle.Play();
+            }
+            else
+            {
+                trail.Stop();
+                circle.Stop();
+            }
+
+            trail.GetComponent<TrailRenderer>().emitting = state;
+
+            float origFov = state ? 40 : 55;
+            float endFov = state ? 55 : 40;
+            float origChrom = state ? 0 : 1;
+            float endChrom = state ? 1 : 0;
+            float origDistortion = state ? 0 : -30;
+            float endDistorton = state ? -30 : 0;
+            float starsVel = state ? -20 : -1;
+            float speed = state ? forwardSpeed * 2f : forwardSpeed; // Speed of boost
+            float zoom = state ? -7 : 0; // how far camera zooms
+
+            DOVirtual.Float(origChrom, endChrom, .5f, Chromatic);
+            DOVirtual.Float(origFov, endFov, .5f, FieldOfView);
+            DOVirtual.Float(origDistortion, endDistorton, .5f, DistortionAmount);
+            var pvel = stars.velocityOverLifetime;
+            pvel.z = starsVel;
+
+            DOVirtual.Float(dolly.m_Speed, speed, .15f, SetSpeed);
+            SetCameraZoom(zoom, .4f);
         }
-        else
+
+        // This setting is used if the player will be holding down the boost button
+        /*if (boostTimer >= 5)
         {
-            trail.Stop();
-            circle.Stop();
-        }
-        trail.GetComponent<TrailRenderer>().emitting = state;
-
-        float origFov = state ? 40 : 55;
-        float endFov = state ? 55 : 40;
-        float origChrom = state ? 0 : 1;
-        float endChrom = state ? 1 : 0;
-        float origDistortion = state ? 0 : -30;
-        float endDistorton = state ? -30 : 0;
-        float starsVel = state ? -20 : -1;
-        float speed = state ? forwardSpeed * 1.1f : forwardSpeed; // Speed of boost
-        float zoom = state ? -7 : 0; // how far camera zooms
-
-        DOVirtual.Float(origChrom, endChrom, .5f, Chromatic);
-        DOVirtual.Float(origFov, endFov, .5f, FieldOfView);
-        DOVirtual.Float(origDistortion, endDistorton, .5f, DistortionAmount);
-        var pvel = stars.velocityOverLifetime;
-        pvel.z = starsVel;
-
-        DOVirtual.Float(dolly.m_Speed, speed, .15f, SetSpeed);
-        SetCameraZoom(zoom, .4f);
+            boostTimer = 0;
+            boostCD = 10;
+            boosting = false;
+            canBoost = false;
+        }*/
     }
 
     void Break(bool state)
     {
-        float speed = state ? forwardSpeed / 3 : forwardSpeed;
+        float speed = state ? forwardSpeed / 10 : forwardSpeed;
         float zoom = state ? 3 : 0;
 
         DOVirtual.Float(dolly.m_Speed, speed, .15f, SetSpeed);
