@@ -13,6 +13,7 @@ public class GarageUIManager : MonoBehaviour
     public GameObject journalPanel;
     public GameObject shipPanel;
     public GameObject quetzalTechPanel;
+    public GameObject dialoguePanel;
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class GarageUIManager : MonoBehaviour
         ship1TechPanel.SetActive(false);
         quetzalTechPanel.SetActive(false);
         journalPanel.SetActive(false);
+        dialoguePanel.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -38,12 +41,14 @@ public class GarageUIManager : MonoBehaviour
     {
         shipPanel.SetActive(true);
         journalPanel.SetActive(false);
+        dialoguePanel.SetActive(false);
     }
 
     public void OnJournalPanel()
     {
         shipPanel.SetActive(false);
         journalPanel.SetActive(true);
+        dialoguePanel.SetActive(false);
     }
 
     public void OnTechPanel()
@@ -57,6 +62,7 @@ public class GarageUIManager : MonoBehaviour
         mainPanel.SetActive(true);
         ship1TechPanel.SetActive(false);
         quetzalTechPanel.SetActive(false);
+        dialoguePanel.SetActive(false);
     }
 
     public void UnlockedShip()

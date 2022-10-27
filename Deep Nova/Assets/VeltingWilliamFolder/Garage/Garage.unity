@@ -1279,7 +1279,7 @@ MonoBehaviour:
   unlocks2: ehdg
   statVal: 0
   unlockInt: 1
-  upgradeCost: 0
+  upgradeCost: 15000
   requirementName: Entropic Gravity Generator
   requirement: 0
   numOfReqs: 2
@@ -6855,7 +6855,7 @@ MonoBehaviour:
   unlocks2: plasma-throwers
   statVal: 0
   unlockInt: 1
-  upgradeCost: 0
+  upgradeCost: 15000
   requirementName: Plasmic Engineering
   requirement: 0
   numOfReqs: 2
@@ -8062,7 +8062,6 @@ GameObject:
   - component: {fileID: 1199709106}
   - component: {fileID: 1199709107}
   - component: {fileID: 1199709109}
-  - component: {fileID: 1199709108}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -8102,6 +8101,7 @@ MonoBehaviour:
   journalPanel: {fileID: 1652714380}
   shipPanel: {fileID: 991024684}
   quetzalTechPanel: {fileID: 1545076729}
+  dialoguePanel: {fileID: 317926735}
 --- !u!114 &1199709107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8114,19 +8114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037d4bba88d26c941944e17634a77ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1199709108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199709103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6151ef77321cbc4486cfd230cb7b287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgradeButton: {fileID: 1297886781}
 --- !u!114 &1199709109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10982,7 +10969,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 1
-  upgradeCost: 0
+  upgradeCost: 15000
   requirementName: Gatling Laser
   requirement: 0
   numOfReqs: 1

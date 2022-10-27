@@ -26,7 +26,7 @@ public class ButtonController : MonoBehaviour
 
     void Start()
     {
-        dialoguePanel.SetActive(false);
+        // dialoguePanel.SetActive(false);
     }
 
     void Update()
@@ -91,6 +91,7 @@ public class ButtonController : MonoBehaviour
             costText.SetText("Upgrade Cost<br>" + PlayerPrefs.GetInt("temp-upgrade-cost").ToString());
             unlockText.SetText("");
             dialoguePanel.SetActive(true);
+            print("dialogue panel open");
 
         }
 
@@ -99,6 +100,7 @@ public class ButtonController : MonoBehaviour
             statText.SetText("");
             valText.SetText("");
             upgradeText.SetText("");
+            costText.SetText("Upgrade Cost<br>" + PlayerPrefs.GetInt("temp-upgrade-cost").ToString());
             unlockText.SetText(PlayerPrefs.GetString("temp-requirement") + " will be unlocked by purchasing.");
             dialoguePanel.SetActive(true);
         }
@@ -135,7 +137,8 @@ public class ButtonController : MonoBehaviour
         int unlockAmount = currentUnlock + PlayerPrefs.GetInt("temp-unlock-val");
         PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-unlocks"), unlockAmount);
         print(PlayerPrefs.GetString("temp-unlocks") + " is unlocked");
-        if(PlayerPrefs.GetString("temp-unlocks2")!="") 
+
+        if(PlayerPrefs.GetString("temp-unlocks2")!="")
         {
             PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-unlocks2"), unlockAmount);
             print(unlocks2 + " is unlocked");
