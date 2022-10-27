@@ -32,6 +32,9 @@ public class ProjectileGun : MonoBehaviour
 
     public bool allowInvoke = true;
 
+    // Getting Camera for locating mouse position
+    [SerializeField] private Camera mainCamera;
+
     private void Awake()
     {
         // Make Sure Magazine is Full
@@ -74,8 +77,15 @@ public class ProjectileGun : MonoBehaviour
         readyToShoot = false;
 
         // Find the exact hit position using a raycast
-        Ray ray = shipCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f)); // Just a ray through the middle of your screen
-        RaycastHit hit;
+        //Ray ray = shipCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.5f)); // Just a ray through the middle of your screen
+        //RaycastHit hit;
+
+        // locating mouse position in the 3D world sence
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            //transform.position = hit.point;
+        }
 
         // Check if Ray hits something
         Vector3 targetPoint;
