@@ -10,7 +10,7 @@ public class PowerupContainer : MonoBehaviour
     //public GameObject Shield;
     //public GameObject darkMatter;
 
-    public GameObject[] powerups = new GameObject[3];
+    public GameObject[] powerups = new GameObject[4];
 
     private Vector3 powerupLocation;
 
@@ -38,5 +38,13 @@ public class PowerupContainer : MonoBehaviour
         }
 
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Bullet")
+        {
+            isBroken = true;
+        }
     }
 }

@@ -16,6 +16,9 @@ public class GUIController : MonoBehaviour
 
     public Text dmfDisplay;
     public ShipMovement DMF;
+
+    public Text paDisplay;
+    public Tom_PlayerGun protoAmmo;
     
     void Start()
     {
@@ -32,7 +35,7 @@ public class GUIController : MonoBehaviour
 
         shieldEnergyDisplay.text = "Energy: " + (Mathf.FloorToInt((shieldEnergy.shieldTimer) * 10) + "%");
 
-        if (shieldEnergy.shieldTimer <= 0) shieldEnergyDisplay.text = " ";
+        if (shieldEnergy.shieldTimer <= 0 || shieldHealth.shieldHealth <= 0) shieldEnergyDisplay.text = " ";
 
 
         shieldHealthDisplay.text = "Shield Health: " + shieldHealth.shieldHealth;
@@ -43,6 +46,11 @@ public class GUIController : MonoBehaviour
         dmfDisplay.text = "Dark Matter Fuel: " + (Mathf.FloorToInt((DMF.dmfTime) * 28.6f) + "%");
 
         if (DMF.dmfTime <= 0) dmfDisplay.text = " ";
+
+
+        paDisplay.text = "Prototype Ammo Timer: " + (Mathf.FloorToInt(protoAmmo.protoAmmoTimer) + 1);
+
+        if (protoAmmo.protoAmmoTimer <= 0) paDisplay.text = " ";
 
     }
 }
