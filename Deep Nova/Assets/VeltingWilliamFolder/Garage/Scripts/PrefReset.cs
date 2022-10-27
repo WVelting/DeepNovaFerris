@@ -49,6 +49,7 @@ public class PrefReset : MonoBehaviour
         PlayerPrefs.SetInt("first-ship-itemradius", 1);
         PlayerPrefs.SetInt("first-ship-health", 1);
         PlayerPrefs.SetString("current-ship", "");
+        PlayerPrefs.SetInt("player-currency", 0);
         print("first ship speed " + PlayerPrefs.GetInt("first-ship-speed"));
         print("ship speed " + PlayerPrefs.GetInt("ship-speed"));
         print("ship 2 speed unlocked " + PlayerPrefs.GetInt("ship-speed2unlock"));

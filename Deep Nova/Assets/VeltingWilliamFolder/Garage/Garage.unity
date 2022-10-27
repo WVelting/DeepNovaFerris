@@ -237,6 +237,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 100
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ship-health2unlock
   requirement: 0
   numOfReqs: 1
@@ -245,6 +246,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &51411157
 MonoBehaviour:
@@ -398,6 +400,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 250
   unlockInt: 1
+  upgradeCost: 0
   requirementName: lcpb2
   requirement: 0
   numOfReqs: 1
@@ -406,6 +409,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &64640621
 MonoBehaviour:
@@ -696,6 +700,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 50
   unlockInt: 1
+  upgradeCost: 0
   requirementName: first-ship-health
   requirement: 1
   numOfReqs: 1
@@ -704,6 +709,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &119487005
 MonoBehaviour:
@@ -1110,6 +1116,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 250
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ehdg2
   requirement: 0
   numOfReqs: 1
@@ -1118,6 +1125,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &161582077
 MonoBehaviour:
@@ -1271,6 +1279,7 @@ MonoBehaviour:
   unlocks2: ehdg
   statVal: 0
   unlockInt: 1
+  upgradeCost: 0
   requirementName: Entropic Gravity Generator
   requirement: 0
   numOfReqs: 2
@@ -1279,6 +1288,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &207250699
 MonoBehaviour:
@@ -1918,6 +1928,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 100
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ship-itemradius2unlock
   requirement: 0
   numOfReqs: 1
@@ -1926,6 +1937,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &359357017
 MonoBehaviour:
@@ -2522,6 +2534,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 50
   unlockInt: 1
+  upgradeCost: 0
   requirementName: first-ship-speed
   requirement: 1
   numOfReqs: 1
@@ -2530,6 +2543,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!1 &543783049
 GameObject:
@@ -2779,6 +2793,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 50
   unlockInt: 1
+  upgradeCost: 0
   requirementName: first-ship-firerate
   requirement: 1
   numOfReqs: 1
@@ -2787,6 +2802,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &550759645
 MonoBehaviour:
@@ -3479,6 +3495,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 50
   unlockInt: 1
+  upgradeCost: 0
   requirementName: first-ship-damage
   requirement: 1
   numOfReqs: 1
@@ -3487,6 +3504,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &692162508
 MonoBehaviour:
@@ -3774,6 +3792,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 100
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ship-speed2unlock
   requirement: 0
   numOfReqs: 1
@@ -3782,6 +3801,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &704877716
 MonoBehaviour:
@@ -4375,6 +4395,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 1
+  upgradeCost: 0
   requirementName: Quetzal Mk V
   requirement: 0
   numOfReqs: 5
@@ -4383,6 +4404,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &747445794
 MonoBehaviour:
@@ -5762,6 +5784,128 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877794463}
   m_CullTransparentMesh: 1
+--- !u!1 &884172527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884172528}
+  - component: {fileID: 884172531}
+  - component: {fileID: 884172530}
+  - component: {fileID: 884172529}
+  m_Layer: 5
+  m_Name: MoneyButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &884172528
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884172527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1271249055}
+  m_Father: {fileID: 1760143801}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 25, y: -25}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &884172529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884172527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 884172530}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &884172530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884172527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &884172531
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884172527}
+  m_CullTransparentMesh: 1
 --- !u!1 &918160942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,6 +6020,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 100
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ship-damage2unlock
   requirement: 0
   numOfReqs: 1
@@ -5884,6 +6029,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &918160946
 MonoBehaviour:
@@ -6521,6 +6667,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 125
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ehdg
   requirement: 0
   numOfReqs: 1
@@ -6529,6 +6676,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1056832071
 MonoBehaviour:
@@ -6682,6 +6830,7 @@ MonoBehaviour:
   unlocks2: plasma-throwers
   statVal: 0
   unlockInt: 1
+  upgradeCost: 0
   requirementName: Plasmic Engineering
   requirement: 0
   numOfReqs: 2
@@ -6690,6 +6839,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1097573347
 MonoBehaviour:
@@ -6977,6 +7127,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 125
   unlockInt: 1
+  upgradeCost: 0
   requirementName: lcpb
   requirement: 0
   numOfReqs: 1
@@ -6985,6 +7136,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1135035464
 MonoBehaviour:
@@ -7689,6 +7841,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 125
   unlockInt: 1
+  upgradeCost: 0
   requirementName: plasma-throwers
   requirement: 0
   numOfReqs: 1
@@ -7697,6 +7850,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1191365477
 MonoBehaviour:
@@ -7747,6 +7901,8 @@ GameObject:
   - component: {fileID: 1199709105}
   - component: {fileID: 1199709106}
   - component: {fileID: 1199709107}
+  - component: {fileID: 1199709109}
+  - component: {fileID: 1199709108}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -7798,6 +7954,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 037d4bba88d26c941944e17634a77ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1199709108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199709103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6151ef77321cbc4486cfd230cb7b287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeButton: {fileID: 0}
+--- !u!114 &1199709109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199709103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3f5cf7097c9a643bbfe9d170125de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyCount: {fileID: 0}
 --- !u!1 &1228461957
 GameObject:
   m_ObjectHideFlags: 0
@@ -7912,6 +8094,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 125
   unlockInt: 1
+  upgradeCost: 0
   requirementName: thermal-venting
   requirement: 0
   numOfReqs: 1
@@ -7920,6 +8103,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1228461961
 MonoBehaviour:
@@ -7958,6 +8142,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228461957}
+  m_CullTransparentMesh: 1
+--- !u!1 &1271249054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1271249055}
+  - component: {fileID: 1271249057}
+  - component: {fileID: 1271249056}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1271249055
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271249054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 884172528}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1271249056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271249054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: + $5000
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1271249057
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271249054}
   m_CullTransparentMesh: 1
 --- !u!1 &1297886778
 GameObject:
@@ -8017,6 +8336,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 0
+  upgradeCost: 0
   requirementName: resetter
   requirement: 0
   numOfReqs: 0
@@ -8025,6 +8345,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1172569037}
   unlockText: {fileID: 1172569037}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1297886781
 MonoBehaviour:
@@ -8258,6 +8579,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 250
   unlockInt: 1
+  upgradeCost: 0
   requirementName: thermal-venting2
   requirement: 0
   numOfReqs: 1
@@ -8266,6 +8588,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1397130386
 MonoBehaviour:
@@ -8860,6 +9183,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 250
   unlockInt: 1
+  upgradeCost: 0
   requirementName: plasma-throwers2
   requirement: 0
   numOfReqs: 1
@@ -8868,6 +9192,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1531108908
 MonoBehaviour:
@@ -9603,6 +9928,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652714380}
   m_CullTransparentMesh: 1
+--- !u!1 &1660327205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660327206}
+  - component: {fileID: 1660327208}
+  - component: {fileID: 1660327207}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1660327206
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660327205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1760143801}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 250, y: -25}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1660327207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660327205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1660327208
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660327205}
+  m_CullTransparentMesh: 1
 --- !u!1 &1665590830
 GameObject:
   m_ObjectHideFlags: 0
@@ -9930,6 +10390,8 @@ RectTransform:
   - {fileID: 1860474373}
   - {fileID: 161582074}
   - {fileID: 747445791}
+  - {fileID: 884172528}
+  - {fileID: 1660327206}
   m_Father: {fileID: 1507084913}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10360,6 +10822,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 0
   unlockInt: 1
+  upgradeCost: 0
   requirementName: Gatling Laser
   requirement: 0
   numOfReqs: 1
@@ -10368,6 +10831,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1823354504
 MonoBehaviour:
@@ -10656,6 +11120,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 250
   unlockInt: 1
+  upgradeCost: 0
   requirementName: mass-fluct2
   requirement: 0
   numOfReqs: 1
@@ -10664,6 +11129,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1860474376
 MonoBehaviour:
@@ -11561,6 +12027,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 100
   unlockInt: 1
+  upgradeCost: 0
   requirementName: ship-firerate2unlock
   requirement: 0
   numOfReqs: 1
@@ -11569,6 +12036,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1942488798
 MonoBehaviour:
@@ -11722,6 +12190,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 125
   unlockInt: 1
+  upgradeCost: 0
   requirementName: mass-fluct
   requirement: 0
   numOfReqs: 1
@@ -11730,6 +12199,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &1977887080
 MonoBehaviour:
@@ -12018,6 +12488,7 @@ MonoBehaviour:
   unlocks2: 
   statVal: 50
   unlockInt: 1
+  upgradeCost: 0
   requirementName: first-ship-itemradius
   requirement: 1
   numOfReqs: 1
@@ -12026,6 +12497,7 @@ MonoBehaviour:
   valText: {fileID: 1172569037}
   upgradeText: {fileID: 1017562968}
   unlockText: {fileID: 867709177}
+  costText: {fileID: 0}
   dialoguePanel: {fileID: 317926735}
 --- !u!114 &2050023375
 MonoBehaviour:

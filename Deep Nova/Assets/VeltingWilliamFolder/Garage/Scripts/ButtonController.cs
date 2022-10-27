@@ -11,6 +11,7 @@ public class ButtonController : MonoBehaviour
     public string unlocks2;
     public int statVal;
     public int unlockInt;
+    public int upgradeCost;
     public string requirementName;
     public int requirement;
     public int numOfReqs;
@@ -20,6 +21,7 @@ public class ButtonController : MonoBehaviour
     public TextMeshProUGUI valText;
     public TextMeshProUGUI upgradeText;
     public TextMeshProUGUI unlockText;
+    public TextMeshProUGUI costText;
     public GameObject dialoguePanel;
 
     void Start()
@@ -31,22 +33,39 @@ public class ButtonController : MonoBehaviour
     {
         if(PlayerPrefs.HasKey(requirementName)) requirement = PlayerPrefs.GetInt(requirementName);
         
-
-        if(requirement < numOfReqs) 
+        if(requirementName == "resetter")
         {
-            button.image.color = new Vector4(0.4f,0.4f,0.4f,1);
-            button.enabled = false;
-            
+            if(PlayerPrefs.GetInt("player-currency") < PlayerPrefs.GetInt("temp-upgrade-cost"))
+            {
+                button.image.color = new Vector4(0.4f,0.4f,0.4f,1);
+                button.enabled = false;
+            }
+            else
+            {
+                button.image.color = new Vector4(1, 1, 1, 1);
+                button.enabled = true;
+            }
         }
-        else if(requirement == numOfReqs)
-        {
-            button.image.color = new Vector4(1,1,1,1);
-            button.enabled = true;
 
-        }
-        else{
-            button.image.color = new Vector4(0,.7f,0,1);
-            button.enabled = false;
+        else
+        {
+
+            if(requirement < numOfReqs) 
+            {
+                button.image.color = new Vector4(0.4f,0.4f,0.4f,1);
+                button.enabled = false;
+                
+            }
+            else if(requirement == numOfReqs)
+            {
+                button.image.color = new Vector4(1,1,1,1);
+                button.enabled = true;
+
+            }
+            else{
+                button.image.color = new Vector4(0,.7f,0,1);
+                button.enabled = false;
+            }
         }
     }
 
@@ -59,12 +78,17 @@ public class ButtonController : MonoBehaviour
         PlayerPrefs.SetInt("temp-unlock-val", unlockInt);
         PlayerPrefs.SetString("temp-requirement", requirementName);
         PlayerPrefs.SetInt("temp-requirement-amount", requirement);
+        PlayerPrefs.SetInt("temp-upgrade-cost", upgradeCost);
+
+        print("cost for upgrade is " + PlayerPrefs.GetInt("temp-upgrade-cost"));
+        print("player money is " + PlayerPrefs.GetInt("player-currency"));
 
         if(PlayerPrefs.GetString("temp-stat-name") != "")
         {
             statText.SetText(statName);
             valText.SetText("Current Value<br>" + PlayerPrefs.GetInt(statName).ToString());
             upgradeText.SetText("Upgraded Value<br>" + (PlayerPrefs.GetInt(statName)+statVal).ToString());
+            costText.SetText("Upgrade Cost<br>" + PlayerPrefs.GetInt("temp-upgrade-cost").ToString());
             unlockText.SetText("");
             dialoguePanel.SetActive(true);
 
@@ -97,6 +121,9 @@ public class ButtonController : MonoBehaviour
         newRequirement ++;
         
         PlayerPrefs.SetInt(PlayerPrefs.GetString("temp-requirement"), newRequirement);
+        int currentMoney = PlayerPrefs.GetInt("player-currency");
+        int newMoney = currentMoney - PlayerPrefs.GetInt("temp-upgrade-cost");
+        PlayerPrefs.SetInt("player-currency", newMoney);
         dialoguePanel.SetActive(false);
 
     }
