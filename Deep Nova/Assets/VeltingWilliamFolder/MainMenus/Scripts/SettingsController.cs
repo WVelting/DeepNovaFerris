@@ -11,15 +11,21 @@ public class SettingsController : MonoBehaviour
     public Slider gameSlider;
     public Slider sfxSlider;
 
+    public AudioSource gameAudio;
+    public AudioSource sfxAudio;
+
     void Start()
     {
-        gameSlider.value = 100;
-        sfxSlider.value = 100;
+        gameSlider.value = PlayerPrefs.GetFloat("game-volume");
+        sfxSlider.value = PlayerPrefs.GetFloat("sfx-volume");
+
         OnVolValChanged();
     }
     
     void Update()
     {
+        gameAudio.volume = gameSlider.value/100f;
+        sfxAudio.volume = sfxSlider.value/100f;
         
     }
 
@@ -27,6 +33,8 @@ public class SettingsController : MonoBehaviour
     {
         gameVal.text = gameSlider.value.ToString();
         sfxVal.text = sfxSlider.value.ToString();
+        PlayerPrefs.SetFloat("game-volume", gameSlider.value);
+        PlayerPrefs.SetFloat("sfx-volume", sfxSlider.value);
     }
 
 }
