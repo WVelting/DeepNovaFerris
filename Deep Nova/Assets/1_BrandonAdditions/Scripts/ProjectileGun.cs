@@ -25,6 +25,7 @@ public class ProjectileGun : MonoBehaviour
     // Reference
     public Camera shipCam;
     public Transform attackPoint;
+    public LayerMask layers;
 
     // Graphics
     public GameObject muzzleFlash;
@@ -74,6 +75,9 @@ public class ProjectileGun : MonoBehaviour
 
     private void Shoot()
     {
+        // Test for bullet hitting different layers
+        Collider[] hitLayers = Physics.OverlapSphere(attackPoint.position, 5f, layers);
+
         readyToShoot = false;
 
         // Find the exact hit position using a raycast
@@ -89,10 +93,13 @@ public class ProjectileGun : MonoBehaviour
 
         // Check if Ray hits something
         Vector3 targetPoint;
-        if (Physics.Raycast(ray, out hit))
-            targetPoint = hit.point;
-        else
-            targetPoint = ray.GetPoint(1000);
+        Physics.Raycast(ray, out hit, 100000, layers);
+        targetPoint = hit.point;
+        //if (Physics.Raycast(ray, out hit)){
+        //    targetPoint = hit.point;
+        //}
+        //else
+        //    targetPoint = ray.GetPoint(1000);
 
         // Calculate direction from attackPoint to targetPoint
         Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
@@ -111,7 +118,7 @@ public class ProjectileGun : MonoBehaviour
 
         // Add forces to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
-        currentBullet.GetComponent<Rigidbody>().AddForce(shipCam.transform.up * upwardForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(attackPoint.transform.up * upwardForce, ForceMode.Impulse);
 
         // Instantiate muzzle flash (if there is one)
         if (muzzleFlash != null)
@@ -152,6 +159,11 @@ public class ProjectileGun : MonoBehaviour
     {
         bulletsLeft = magazineSize;
         reloading = false;
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        
     }
 
 }

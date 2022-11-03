@@ -25,6 +25,11 @@ public class Brandon_PlayerMovement : MonoBehaviour
     private bool boosting = false;
     private bool canBoost = false;
 
+    // Waypoints
+    public GameObject destination;
+    private Rigidbody rb;
+    public float turningSpeed = 1f;
+
 
     [Space]
 
@@ -43,12 +48,22 @@ public class Brandon_PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         playerModel = transform.GetChild(0);
         SetSpeed(forwardSpeed);
     }
 
     void Update()
     {
+
+        // Waypoint Movement Start
+        /*Vector3 lookPos = destination.transform.position - transform.position;
+        lookPos.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * turningSpeed);*/
+
+        // Waypoint Movement End
+
         float h = joystick ? Input.GetAxis("Horizontal") : Input.GetAxis("Mouse X");
         float v = joystick ? Input.GetAxis("Vertical") : Input.GetAxis("Mouse Y");
 
