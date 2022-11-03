@@ -16,6 +16,7 @@ public class PrefReset : MonoBehaviour
         
     }
 
+    //resets all of the main Player Pref values
     public void OnReset()
     {
         //Main Prefs
@@ -55,11 +56,12 @@ public class PrefReset : MonoBehaviour
         print("ship 2 speed unlocked " + PlayerPrefs.GetInt("ship-speed2unlock"));
         print("plasmic unlocked " + PlayerPrefs.GetInt("plasmic"));
 
-        //cached Prefs
     }
 
+    //resets the cached Player Pref values
     public void CacheReset()
     {
+        //cached Prefs
         PlayerPrefs.SetInt("resetter", 0);
         PlayerPrefs.SetString("temp-stat-name", "");
         PlayerPrefs.SetInt("temp-stat-val", 0);

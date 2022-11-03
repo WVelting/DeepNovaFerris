@@ -11,13 +11,14 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
 
+    //main menu panels
     public GameObject mainPanel;
     public GameObject settingsPanel;
     public GameObject chapterPanel;
     public GameObject creditsPanel;
     
     
-
+    //Sets starting panel setup
     void Start()
     {
         mainPanel.SetActive(true);
@@ -33,6 +34,7 @@ public class MenuController : MonoBehaviour
         
     }
 
+    //switches panel to Chapter Select
     public void OnClickChapterSelect()
     {
         mainPanel.SetActive(false);
@@ -41,6 +43,7 @@ public class MenuController : MonoBehaviour
         creditsPanel.SetActive(false);
     }
 
+    //switches panel to settings panel
     public void OnClickSettings()
     {
         mainPanel.SetActive(false);
@@ -50,6 +53,7 @@ public class MenuController : MonoBehaviour
 
     }
 
+    //switches panel to credits panel
     public void OnClickCredits()
     {
         mainPanel.SetActive(false);
@@ -58,6 +62,7 @@ public class MenuController : MonoBehaviour
         creditsPanel.SetActive(true);
     }
 
+    //switches panel to main panel
     public void OnClickBackToMain()
     {
         mainPanel.SetActive(true);
@@ -66,11 +71,13 @@ public class MenuController : MonoBehaviour
         creditsPanel.SetActive(false);
     }
 
+    //exits out of game
     public void OnClickExit()
     {
         Application.Quit();
     }
 
+    //opens up Snailent scene
     public void OnClickSnailent()
     {
         SceneManager.LoadScene("Snailent");

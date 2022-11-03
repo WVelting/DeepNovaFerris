@@ -6,23 +6,23 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    public string statName;
-    public string unlocks;
-    public string unlocks2;
-    public int statVal;
-    public int unlockInt;
-    public int upgradeCost;
-    public string requirementName;
-    public int requirement;
-    public int numOfReqs;
-    public Button button;
+    public string statName; //attribute for stat name
+    public string unlocks; //attribute for what upgrade unlocks
+    public string unlocks2; //attribute for second unlock
+    public int statVal; //attribute for the total val upgrade will add to stat
+    public int unlockInt; //attribute for how much the upgrade will add to unlock requirements
+    public int upgradeCost; //attribute for how much is needed to unlock upgrade
+    public string requirementName; //attribute for what is needed to unlock upgrade
+    public int requirement; //current unlock stat
+    public int numOfReqs; //how many requirements are needed to unlock
+    public Button button; //the upgrade button
 
-    public TextMeshProUGUI statText;
-    public TextMeshProUGUI valText;
-    public TextMeshProUGUI upgradeText;
-    public TextMeshProUGUI unlockText;
-    public TextMeshProUGUI costText;
-    public GameObject dialoguePanel;
+    public TextMeshProUGUI statText; //displays upgrade name
+    public TextMeshProUGUI valText; //displays current stat val
+    public TextMeshProUGUI upgradeText; //displays upgraded stat val
+    public TextMeshProUGUI unlockText; //displays what will be unlocked
+    public TextMeshProUGUI costText; //displays cost of upgrade
+    public GameObject dialoguePanel; //panel that holds the upgrade information
 
     void Start()
     {
@@ -31,8 +31,10 @@ public class ButtonController : MonoBehaviour
 
     void Update()
     {
+
         if(PlayerPrefs.HasKey(requirementName)) requirement = PlayerPrefs.GetInt(requirementName);
         
+        //makes sure that you can only upgrade if you have enough currency
         if(requirementName == "resetter")
         {
             if(PlayerPrefs.GetInt("player-currency") < PlayerPrefs.GetInt("temp-upgrade-cost"))
@@ -47,6 +49,7 @@ public class ButtonController : MonoBehaviour
             }
         }
 
+        //disables buttons that are not unlocked yet
         else
         {
 
@@ -69,6 +72,7 @@ public class ButtonController : MonoBehaviour
         }
     }
 
+    //caches information stored in upgrade button to be used in the dialogue panel
     public void OnUpgradeButtonPress()
     {
         PlayerPrefs.SetString("temp-stat-name", statName);
@@ -107,6 +111,7 @@ public class ButtonController : MonoBehaviour
 
     }
 
+    //changes stat values in Player Pref once the upgrade button from the dialogue box has been pressed
     public void OnValButtonPress()
     {
         if(PlayerPrefs.GetString("temp-stat-name")!="")
@@ -130,6 +135,7 @@ public class ButtonController : MonoBehaviour
 
     }
 
+    //settles any unlocks that the upgrade has unlocked when the upgrade button from the dialogue box has been pressed
     public void OnUnlockButtonPress()
     {
         print("pressed");
@@ -147,7 +153,7 @@ public class ButtonController : MonoBehaviour
 
     }
 
-
+    //changes ships when a ship unlock button has been pressed
     public void OnShipUnlock()
     {
         PlayerPrefs.SetString("current-ship", statName);

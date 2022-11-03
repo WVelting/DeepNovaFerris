@@ -8,13 +8,14 @@ using TMPro;
 public class GarageUIManager : MonoBehaviour
 {
 
-    public GameObject mainPanel;
-    public GameObject ship1TechPanel;
-    public GameObject journalPanel;
-    public GameObject shipPanel;
-    public GameObject quetzalTechPanel;
-    public GameObject dialoguePanel;
+    public GameObject mainPanel; //main panel
+    public GameObject ship1TechPanel; //tech tree for ship one
+    public GameObject journalPanel; //chapter select panel
+    public GameObject shipPanel; //ship repair and tech tree panel
+    public GameObject quetzalTechPanel; //tech tree panel for ship two
+    public GameObject dialoguePanel; //shows values and costs for upgrades
 
+    //sets beginning panel layout
     void Start()
     {
         mainPanel.SetActive(true);
@@ -32,11 +33,13 @@ public class GarageUIManager : MonoBehaviour
         
     }
 
+    //loads scene "snailent"
     public void OnChapterOne()
     {
         SceneManager.LoadScene("Snailent");
     }
 
+    //switches panel to ship panel
     public void OnShipPanel()
     {
         shipPanel.SetActive(true);
@@ -44,6 +47,7 @@ public class GarageUIManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
+    //switches panel to chapter select panel
     public void OnJournalPanel()
     {
         shipPanel.SetActive(false);
@@ -51,12 +55,14 @@ public class GarageUIManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
+    //switches panel to tech tree panel of the correct ship
     public void OnTechPanel()
     {
         mainPanel.SetActive(false);
         UnlockedShip();
     }
 
+    //switches panel to main panel
     public void OnMainPanel()
     {
         mainPanel.SetActive(true);
@@ -65,6 +71,7 @@ public class GarageUIManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
+    //determines which ship the player has currently unlocked
     public void UnlockedShip()
     {
         print("switching now");

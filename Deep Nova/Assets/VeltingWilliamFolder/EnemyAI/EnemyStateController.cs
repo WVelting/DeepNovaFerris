@@ -5,12 +5,12 @@ using UnityEngine;
 public class EnemyStateController : MonoBehaviour
 {
 
-    private EnemyShip enemy;
-    private GameObject player;
+    private EnemyShip enemy; //enemy ship
+    private GameObject player; //player ship
     void Start()
     {
-        enemy = GetComponent<EnemyShip>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        enemy = GetComponent<EnemyShip>(); //assigns enemy ship to enemy
+        player = GameObject.FindGameObjectWithTag("Player"); //assigns player ship to player
 
     }
 
@@ -20,6 +20,7 @@ public class EnemyStateController : MonoBehaviour
         SteerToPlayer();
     }
 
+    //lerp function for animation purposes
     public static Vector3 Lerp(Vector3 a, Vector3 b, float p)
     {
         Vector3 result = new Vector3();
@@ -36,6 +37,7 @@ public class EnemyStateController : MonoBehaviour
         return (b - a) * p + a;
     }
 
+    //has enemy ship look toward player and then move toward player once a set distance has been reached between the two players
     void SteerToPlayer()
     {
         Vector3 vToP = player.transform.position - enemy.transform.position;
