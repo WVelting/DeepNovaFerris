@@ -22,8 +22,8 @@ public class EnemyStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //SteerToPlayer();
-        Wander();
+        SteerToPlayer();
+        //Wander();
     }
 
     //lerp function for animation purposes
@@ -94,7 +94,7 @@ public class EnemyStateController : MonoBehaviour
 
         if(vToP.sqrMagnitude < visionDistance * visionDistance)
         {
-            enemy.transform.position = Lerp(transform.position, player.transform.position, .005f);
+            enemy.transform.position = Lerp(transform.position, player.transform.position + player.transform.forward*200 + player.transform.up*50, .008f);
         }
     }
 
