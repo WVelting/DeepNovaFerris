@@ -278,6 +278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6dd2d50dff36aa4194ae265436809ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 1906253134499743289, guid: 54907ecf50b27634fac75f8000c8e89e,
+    type: 3}
+  randomPath: {x: 0, y: 0, z: 0}
+  originPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &3322215135651914915
 MonoBehaviour:
   m_ObjectHideFlags: 0

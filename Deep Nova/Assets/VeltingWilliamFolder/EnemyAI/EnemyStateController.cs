@@ -8,8 +8,11 @@ public class EnemyStateController : MonoBehaviour
     private EnemyShip enemy; //enemy ship
     private GameObject player; //player ship
 
+    public GameObject projectile;
+
     public Vector3 randomPath;
     public Vector3 originPosition;
+    public float attackTimer = 0.5f;
     void Start()
     {
         enemy = GetComponent<EnemyShip>(); //assigns enemy ship to enemy
@@ -23,6 +26,11 @@ public class EnemyStateController : MonoBehaviour
     void Update()
     {
         SteerToPlayer();
+
+        if((player.transform.position - transform.position).magnitude <= 5000) Attack();
+
+        attackTimer -= Time.deltaTime;
+        
         //Wander();
     }
 
@@ -123,6 +131,18 @@ public class EnemyStateController : MonoBehaviour
         int wanderLength = Random.Range(100, 200);
         randomPath = new Vector3(originPosition.x+Random.Range(-wanderLength, wanderLength),originPosition.y+Random.Range(-wanderLength, wanderLength),originPosition.z+Random.Range(-wanderLength, wanderLength));
         return randomPath;
+    }
+
+    public void Attack()
+    {
+
+
+        if (attackTimer <= 0)
+        {
+            Instantiate(projectile, transform.position - new Vector3(0, 0, -25), Quaternion.identity);
+            attackTimer = 0.5f;
+        }
+        else return;
     }
 
 }
